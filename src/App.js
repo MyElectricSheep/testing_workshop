@@ -1,5 +1,6 @@
 import React from "react";
 import SuperButton from "./SuperButton";
+import MyComponent from "./MyComponent"
 
 export default function App() {
   return (
@@ -69,6 +70,7 @@ export default function App() {
         </li>
       </ol>
       <img src="Screenshot.png" alt="screenshot" style={{ width: "100vw" }} />
+      <MyComponent/>
     </div>
   );
 }

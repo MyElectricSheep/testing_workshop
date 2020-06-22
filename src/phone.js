@@ -1,3 +1,4 @@
-export default function isPhoneNumber(number) {
-  return /\+?[0-9 ]{7,14}/.test(number);
+export const isPhoneNumber = (number) => {
+  const sanitizedNumber = number ? number.replace(/[a-zA-Z]/g, "") : ''
+  return /\+?[0-9 -.]{7,16}/.test(sanitizedNumber);
 }
