@@ -8,16 +8,24 @@ import {
   factorial,
   fibonacci,
   promiseAllTheWay,
-} from "./utils";
+} from "../utils";
 
 describe("Utils", () => {
   describe("Add", () => {
     it("Should throw an error if value passed is not a number", () => {
       expect(() => add("a", NaN)).toThrow();
     });
-    it("Should add two numbers together", () => {
+    it("Should not add two integer numbers together incorrectly", () => {
+      const result = add(2, 2);
+      expect(result).not.toBe(0)
+    });
+    it("Should add two integer numbers together correctly", () => {
       const result = add(1, 2);
       expect(result).toBe(3);
+    });
+    it("Should add two decimal numbers together correctly", () => {
+      const result = add(0.1, 0.2);
+      expect(result).toBeCloseTo(0.3);
     });
   });
 

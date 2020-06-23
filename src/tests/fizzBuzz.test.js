@@ -1,4 +1,4 @@
-import { fizzBuzz } from './fizzBuzz'
+import { fizzBuzz } from '../fizzBuzz'
 
   describe('FizzBuzz', () => {
     it('Should throw an exception if the input is not a number', () => {

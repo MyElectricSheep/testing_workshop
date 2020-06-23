@@ -1,9 +1,7 @@
 import React from "react";
-import { shallow, configure } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
-import AwesomeButton from "./SuperButton";
-
-configure({ adapter: new Adapter() });
+import { shallow } from "enzyme";
+import AwesomeButton from "../SuperButton";
+import "../setupTests"
 
 test("Button", () => {
   const SuperButton = shallow(<AwesomeButton />);
