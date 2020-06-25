@@ -1,1 +1,1 @@
-Testing Workshop for WBS Coding School
+# JEST + ENZYME Testing Workshop
