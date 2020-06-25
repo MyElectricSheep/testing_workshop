@@ -1,2 +1,1 @@
-# jest
-Testing Workshop
+Testing Workshop for WBS Coding School
